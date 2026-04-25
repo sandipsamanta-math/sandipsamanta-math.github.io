@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--
+      The above 2 meta tags *must* come first in the <head>
+      to consistently ensure proper document rendering.
+      Any other head element should come *after* these tags.
+      -->
+   <title>Sandip Samanta</title>
+   <!-- Set the base URL for all relative URLs within the document -->
+   <base href="https://students.iiserkol.ac.in/~ss18ip021/">
+   <!--
+      Allows control over where resources are loaded from.
+      Place as early in the <head> as possible, as the tag  
+      only applies to resources that are declared after it.
+      -->
+   <!-- Short description of the document (limit to 150 characters) -->
+   <!-- This content *may* be used as a part of search engine results. -->
+   <meta name="description" content="Personal webpage of Sandip">
+   <!-- Control the behavior of search engine crawling and indexing -->
+   <meta name="robots" content="index,follow">
+   <!-- All Search Engines -->
+   <meta name="googlebot" content="index,follow">
+   <!-- Google Specific -->
+   <!-- Verify website ownership -->
+   <meta name="google-site-verification" content="">
+   <!-- Google Search Console -->
+   <meta name="yandex-verification" content="">
+   <!-- Yandex Webmasters -->
+   <meta name="msvalidate.01" content="">
+   <!-- Bing Webmaster Center -->
+   <meta name="alexaVerifyID" content="">
+   <!-- Alexa Console -->
+   <meta name="p:domain_verify" content="">
+   <!-- Pinterest Console-->
+   <meta name="norton-safeweb-site-verification" content="">
+   <!-- Norton Safe Web -->
+   <!-- Allows control over how referrer information is passed -->
+   <meta name="referrer" content="no-referrer">
+   <!-- Disable automatic detection and formatting of possible phone numbers -->
+   <meta name="format-detection" content="telephone=true">
+   <!-- Completely opt out of DNS prefetching by setting to "off" -->
+   <meta http-equiv="x-dns-prefetch-control" content="on">
+   <!-- Geo tags -->
+   <!-- meta name="ICBM" content="latitude, longitude"-->
+   <!-- meta name="geo.position" content="latitude;longitude"-->
+   <!-- meta name="geo.region" content="country[-state]"><Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
+   <!-- meta name="geo.placename" content="city/town"><eg. content="New York City" -->
+   <!-- Link to an external CSS file -->
+   <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Courgette&family=Lobster&family=Pacifico&family=Yellowtail&family=Noto+Sans+JP:wght@400;900&family=Poppins:wght@500&family=Righteous&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/main.css">
+   <!-- Tailwind -->
+   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- BootStrap CDN --> 
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <script src="https://kit.fontawesome.com/32a2b2a489.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> 
+   <!--  GIT TALK CDN  for comment system -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+   <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
+   <!-- Provides information about an author or another person -->
+   <link rel="me" href="mailto:samantasandip23@gmail.com">
+   <link rel="me" href="sms:+">
+  
+   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/icon.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/icon.png">
+   <link rel="mask-icon" href="/assets/img/icons/icon.png" color="#5bbad5">
+   <meta property="fb:app_id" content="">
+   <meta property="og:url" content="http://localhost:4000">
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="Sandip Samanta, Personal webpage of Sandip">
+   <meta property="og:image" content="/assets/img/sandip.png">
+   <meta property="og:image:alt" content="Sandip Profile picture">
+   <meta property="og:description" content="Personal webpage of Sandip">
+   <meta property="og:site_name" content="Sandip Samanta">
+   <meta property="og:locale" content="en_US">
+   <meta property="article:author" content="Sandip Samanta">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:site" content="@">
+   <meta name="twitter:creator" content="@">
+   <meta name="twitter:url" content="http://localhost:4000">
+   <meta name="twitter:title" content="Personal webpage of Sandip">
+   <meta name="twitter:description" content="Personal webpage of Sandip">
+   <meta name="twitter:image" content="/assets/img/sandip.png">
+   <meta name="twitter:image:alt" content="Sandip Profile picture">
+   <!-- Used for adding in-document CSS -->
+   <!-- JavaScript & No-JavaScript tags -->
+   <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/styles/monokai-sublime.min.css">
+   <script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/highlight.min.js"></script>
+   <!-- and it's easy to individually load additional languages -->
+   <script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/languages/go.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+   
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '');
+   </script>
+
+   <!-- For inline math-->
+   <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js"],
+        "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+        TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+        messageStyle: "none"
+      });
+   </script>     
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+   
+   <noscript>
+   </noscript>
+
+   <style>
+      .p-top {
+      padding-top: 5.5em;
+      }
+      @media only screen and (max-width: 990px) {
+      .p-top {
+      padding-top: 14em;
+      }
+      }
+   </style>
+
+   <body>
+      <nav class="navbar fixed-top navbar-expand-lg glowing-border mb-4" style="font-family:Poppins;background-color:#10292e;">
+         <a class="navbar-brand" href="index.html">
+            <h4 style="font-family:Noto Sans JP;font-weight:600;color:#149f98;">Sandip Samanta</h4>
+         </a>
+         <button class="navbar-toggler text-black" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <i style = "color:#149f98;" class="fas fa-caret-down"></i>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a href="research.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Research</a>
+               </li>
+               <li class="nav-item">
+                  <a href="https://drive.google.com/file/d/133Mtibu7Yn2V12WMy6c9R1ruEDMtJ1zY/view?usp=sharing" target = "_blank" class="nav-link" style="font-family:Poppins;color:#149f98;" target="blank">Vitae</a>
+               </li>
+               <li class="nav-item">
+                  <a href="contact.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Contact</a>
+               </li>
+            </ul>
+            <ul class="navbar-nav  justify-content-end">
+               <li class="nav-item">
+                  <!-- Displays Social Media Icons based on _config.yml settings -->
+                  <span style="color:#CCCCCC;">
+                  <i> &nbsp;&nbsp; </i>
+                  <i> &nbsp;&nbsp; </i>
+                  </span>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="dumbarton-spacer-sm"></div>
+      <div class="container p-top">
+         <!--  HELP TIPS SECTION  -->
+         <!-- used only for develop mode, disable these in _config.yml with `help_tips: false` -->
+         <!-- ABOUT ME SECTION -->
+         <div class="card mx-auto border-0" style="position:relative;">
+            <div class="row">
+               <div class="col-md-4">
+                  <img src="assets/img/avatar/my_pic_website.svg" class="img-thumbnail float-left animate__animated animate__fadeInLeft rounded border-0" alt="Sandip Samanta pic taken at Munster, Germany">
+               </div>
+               <!-- EDUCATION SECTION -->
+               <div class="col-md-8">
+                  <div class="card-body animate__animated animate__fadeInRight">
+                     <p>
+                     <h3 id="hi-im-sandip-">Hi, I’m Sandip 👋</h3>
+                     <p>I have completed my PhD from <a style="color:rgb(77, 116, 116);" href="https://iiserkol.ac.in">Indian Institute of Science Education and Research Kolkata</a> 
+                        in the <a style="color:rgb(77, 116, 116);" href="https://math.iiserkol.ac.in">Department of Mathematics and Statistics</a> under the supervision of <a style="color:rgb(77, 116, 116);" href="https://math.iiserkol.ac.in/faculties/somnath_basu.html">Prof. Somnath
+                        Basu</a>. My broad area of research is Algebraic Topology, in paricular homotopy theory and homological algebra. I am also interested in Differential and Topological Geometry, Combinatorics, and concepts of moduli spaces.
+                     </p>
+                     <!-- <p><a href="contact.html" class="highlighted">Contact Me</a></p> -->
+                     <p>
+                     <h5 class="card-title" style="font-family:Noto Sans JP;font-size:18px"> Education & Certifications</h5>
+                     <ul class="list-unstyled">
+                        <li class="media">
+                           <img src="assets/img/iiser-k_logo_mid.png" class="mr-3" alt="IISERK Logo">
+                           <div class="media-body">
+                              <h5 style="font-family:Noto Sans JP;font-size:18px;">IISER Kolkata</h5>
+                              <p style="font-family:Noto Sans JP;font-size:15px;"><i>Department of Mathemetics and Statistics</i></p>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- style="font-family:Poppins;background-color:#10292e; -->
+         <!-- HOME HIGHLIGHTS SECTION --> 
+         <div class="card mx-auto animate__animated animate__slideInUp animate__delay-1s glowing-border" style="max-width: 100%;">
+
+          <div class="card-header" style="background-color:#10292e;">
+            <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
+              
+                
+                  <li class="nav-item">
+                    <a class="nav-link active" id="" href="#publications" role="tab" aria-controls="publications" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Publications</a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                      <a class="nav-link" id="" href="#awards" role="tab" aria-controls="awards" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Awards</a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                      <a class="nav-link" id="" href="#teaching" role="tab" aria-controls="teaching" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Teaching</a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                      <a class="nav-link" id="" href="#projects" role="tab" aria-controls="projects" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Projects</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" id="" href="#reading_semi" role="tab" aria-controls="reading_semi" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Reading Seminar</a>
+                </li>
+                
+
+                  <li class="nav-item">
+                    <a class="nav-link" id="" href="#talks" role="tab" aria-controls="talks" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Talks</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" id="" href="#posters" role="tab" aria-controls="posters" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Poster Presentation</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" id="" href="#conf_work" role="tab" aria-controls="conf_work" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Conferences & Workshops</a>
+              </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" id="" href="#misc" role="tab" aria-controls="misc" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Miscellaneous</a>
+              </li>
+              
+            </ul>
+          </div>
+          <div class="card-body" style="background-color:#eaf1f3;">          
+              <div class="tab-content mt-3">
+                 <div class="tab-pane ml-4 active" id="publications" role="tabpanel">
+                   <p><i></i></p>
+                   <p class="card-text">
+                     <ol class="list-disc bibliography">
+                      <li>
+                        <div class="row">
+                          <div id="SomnathSandip" class="col-sm-8">
+                            <div class="title font-weight-bold">
+                              Equivalence Between Four Models of Associahedra
+                            </div>
+                            <div class="author">
+                                  Somnath Basu, and <em>Sandip Samanta</em>
+                            </div>
+                            <div class="periodical">
+                              <a href="https://arxiv.org/abs/2201.04847" style="color:rgb(29, 29, 165);" target="_blank">arXiv</a>, 2022; Published in <a href="https://projecteuclid.org/journals/osaka-journal-of-mathematics/volume-62/issue-1/Equivalence-between-four-models-of-associahedra/5914ojm.full?tab=ArticleLink" style="color:rgb(29, 29, 165);" target="_blank" class="text-blue-450 hover:text-blue-800">Osaka Journal of Mathematics</a>, Vol. 62, No. 1 (January 2025).
+                            </div>
+                            <div class="links">
+                              <!-- <a href="https://arxiv.org/pdf/2201.04847" role="button" target="_blank"><i class="fas fa-external-link-alt"></i></a> -->
+                              <!-- <a href="/assets/pdf/Models_of_Associahedra.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="fas fa-file-pdf"></i></a> -->
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="row">
+                          <div id="SomnathAritraSandip" class="col-sm-8">
+                            <div class="title font-weight-bold">
+                              On the generalized brace product: relation to $H$-splitting of loop space fibrations \& the $J$-homomorphism
+                            </div>
+                            <div class="author">
+                                  Somnath Basu, and Aritra Bhowmick, and <em>Sandip Samanta</em>
+                            </div>
+                            <div class="periodical">
+                              <a href="https://arxiv.org/abs/2401.16206" style="color:rgb(29, 29, 165);" target="_blank">arXiv</a>, To appear in <a href="https://iumj.org/" style="color:rgb(29, 29, 165);" target="_blank" class="text-blue-450 hover:text-blue-800"> Indiana Univ. Math. Journal</a>.
+                            </div>
+                            <div class="links">
+                              <!-- <a href="https://arxiv.org/pdf/2401.16206" role="button" target="_blank"><i class="fas fa-external-link-alt"></i></a> -->
+                              <!-- <a href="/assets/pdf/Generalized_Brace_Product_in_Fibrations_With_Section_.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="fas fa-file-pdf"></i></a> -->
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                     </ol>
+                    </p>
+                  </div>
+
+
+                  <div class="tab-pane overflow-auto" id="awards" role="tabpanel" aria-labelledby="awards-tab">  
+                    <p><i></i></p>
+                    <div class="list-group">
+                      <ol class="pl-8 list-disc text-base">
+                        <li class="mb-4">
+                          <span class="text-gray-900">PMRF</span><br>
+                          <span class="text-sm pl-4 text-gray-600">Selected under Prime Minister’s Research Fellows Scheme, May 2021 cycle</span>
+                        </li>
+      
+                        <li class="mb-4">
+                          <span class="text-gray-900">Gold Medalist, B.Sc.(Hons.)</span><br>
+                          <span class="text-sm pl-4 text-gray-600">Ranked first in order of merit among the successful candidates of B.Sc (Hons.) examination in Mathematics, Vidyasagar University.</span>
+                        </li>
+      
+                        <li class="mb-4">
+                          <span class="text-gray-900">Sukumari Gupta Smriti Puraskar</span><br>
+                          <span class="text-sm pl-4 text-gray-600">Awarded for securing highest marks amongst all successful candidates in all honours examination in Arts, Science & commerce (Vidyasagar University)</span>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                    
+                  <div class="tab-pane overflow-auto" id="teaching" role="tabpanel" aria-labelledby="teaching-tab">  
+                    <p><i></i></p>
+                        
+                        <div class="list-group">
+                          <ol class="pl-8 list-disc text-base">
+
+                            <li class="mb-4">
+                              <span class="text-gray-900">Geometry of Curves and Surfaces (Teaching Assistant), <small>January 2025 - May 2025</small>, IISER Kolkata</span><br>
+                              <span class="text-sm pl-4 text-gray-600">Conducted four Tutorial Sessions, helped in invigilation for the exams, and partly graded End-Sem copies. </span>
+                            </li>
+                            
+                            <li class="mb-4">
+                              <span class="text-gray-900">Mathematics I (Teaching Assistant), <small>August 2024 - December 2024</small>, IISER Kolkata</span><br>
+                              <span class="text-sm pl-4 text-gray-600">Conducted weekly Tutorial Sessions, helped in invigilation for the exams, and partly graded the class test, Mid-Sem copies.</span>
+                            </li>
+
+                            <li class="mb-4">
+                              <span class="text-gray-900">Guide to prepare for IIT JAM (Mathematics), Kharagpur College, and Jagannath Kishore College (online), <small>April 2024 - August 2024</small></span><br>
+                              <span class="text-sm pl-4 text-gray-600">Conducted weekly problem solving sessions (online) on previous year IIT JAM Mathematics problems. 
+                                <!-- All the pdfs of the notes are available <a href="https://drive.google.com/drive/folders/1EVLwyF-X4y6DEaoIlcd5TH14PiaV_M1x?usp=sharing" class="text-blue-400 hover:text-gray-500" target="_blank"> here</a>. -->
+                            </li>
+
+                            <li class="mb-4">
+                              <span class="text-gray-900">NPTEL: GATE Mathematics Live session, <small>August 2023 - February 2024</small>, NPTEL</span><br>
+                              <span class="text-sm pl-4 text-gray-600">Conducted weekly problem solving sessions (online) on previous year GATE Mathematics problems. All the pdfs of the notes are available <a href="https://drive.google.com/drive/folders/1t6ACRehZpv0NB2a02lfBGT7cJDtgxwMR?usp=sharing" class="text-blue-400 hover:text-gray-500" target="_blank"> here</a>.
+                            </li>
+
+                            <li class="mb-4">
+                              <span class="text-gray-900">NPTEL: Point Set Topology (Teaching Assistant), <small>January 2023 - April 2023</small>, NPTEL</span><br>
+                              <span class="text-sm pl-4 text-gray-600">Conducted weekly problem solving sessions (online). Recorded videos are available in my <a href="https://youtube.com/playlist?list=PLEyIFBwVpxMIZWmqFk4U67XSDzOtouyCg" target="_blank">youtube channel</a>. All the pdfs of the notes can be found <a href="https://drive.google.com/drive/folders/1VdmRPhgku4iJiIbw71C-VB6X3AxOcP8a?usp=share_link" class="text-blue-400 hover:text-gray-500" target="_blank"> here</a>.
+                            </li>
+
+                            <li class="mb-4">
+                              <span class="text-gray-900">Mathematics I (Teaching Assistant), <small>October 2022 - December 2022</small>, IISER Kolkata</span><br>
+                              <span class="text-sm pl-4 text-gray-600">Conducted weekly Tutorial Sessions, helped in invigilation for exams and partly graded the class test, Mid-Sem and End-Sem copies.</span>
+                            </li>
+
+                            <li class="mb-4">
+                              <span class="text-gray-900">NPTEL: Linear Algebra (Teaching Assistant), <small>July 2022 - October 2022</small>, NPTEL</span><br>
+                              <span class="text-sm pl-4 text-gray-600">Conducted weekly problem solving sessions (online). Recorded videos are available in <a href="https://youtube.com/playlist?list=PLEyIFBwVpxMKJrJcXFt-g6zd-IRktrA_w" target="_blank">Youtube</a> and all the pdfs of the notes are available <a href="https://drive.google.com/drive/folders/14EeQcNVSe-LNo2lrgab8fhzk--Kostki?usp=sharing" class="text-blue-400 hover:text-gray-500" target="_blank"> Here</a>.
+                            </li>
+
+                            <li class="mb-4">
+                              <span class="text-gray-900">Mathematics II (Teaching Assistant), <small>May 2022 - July 2022</small>, IISER Kolkata</span><br>
+                              <span class="text-sm pl-4 text-gray-600">Conducted weekly Tutorial Sessions and prepare sample questions.</span>
+                            </li>
+          
+                            <li class="mb-4">
+                              <span class="text-gray-900">NPTEL: Research Methodology (Teaching Assistant), <small>January 2022 - May 2022</small>, NPTEL</span><br>
+                              <span class="text-sm pl-4 text-gray-600">Evaluted assignments.</span>
+                            </li>              
+                            
+                            <li class="mb-4">
+                              <span class="text-gray-900">Probability I (Teaching Assistant), <small>January 2022 - May 2022</small>, IISER Kolkata</span><br>
+                              <span class="text-sm pl-4 text-gray-600">Conducted weekly Tutorial Sessions, made question papers, evaluated Assignments, Mid-Sem, and End-Sem copies.</span>
+                            </li>
+
+                            <li class="mb-4">
+                              <span class="text-gray-900">Linear Algebra I (Teaching Assistant), <small>August 2021 - December 2021</small>, IISER Kolkata</span><br>
+                              <span class="text-sm pl-4 text-gray-600">Conducted weekly Tutorial Sessions and partly evaluated class tests.</span>
+                            </li>
+
+                            <li class="mb-4">
+                              <span class="text-gray-900">Analysis II (Teaching Assistant), <small>January 2021 - May 2021</small>, IISER Kolkata</span><br>
+                              <span class="text-sm pl-4 text-gray-600">Conducted weekly Tutorial Sessions and evaluated Assignments.</span>
+                            </li>
+
+                            <li class="mb-4">
+                              <span class="text-gray-900">Analysis I (Teaching Assistant), <small>August 2020 - December 2020</small>, IISER Kolkata</span><br>
+                              <span class="text-sm pl-4 text-gray-600">Conducted weekly Tutorial Sessions, made question papers, evaluated Assignments, Mid-Sem, and End-Sem copies.</span>
+                            </li>
+                          </ol>
+                        </div>
+                        
+                  </div>
+                    
+                  
+                  <div class="tab-pane overflow-auto" id="projects" role="tabpanel" aria-labelledby="projects-tab">  
+                    <p><i></i></p>
+                    <ol class="pl-4 list-decimal">  
+                      <li class="text-lg">
+                        <div class="media mt-2">
+                          <div class="media-body">
+                            <h5 class="mt-0">IPhD Projects</h5>
+                            <div class="list-group">
+                              <ol class="pl-8 list-disc text-base">
+                                <li class="mb-4">
+                                  <span class="text-gray-900">Project I, <em>Reeb's Theorem</em></span><br>
+                                  <p class="text-base pl-4 text-gray-600">In this project, we studied the Morse Theory and use it to prove Reeb's theorem, which  states that if If $M$ is a compact manifold and $f$ is a $C^2$-function on $M$ with only two critical points, both of which are non-degenerate, then $M$ is homeomorphic to a sphere. We followed the book Morse Theory by John Milnor.</p>
+                                </li>
+              
+                                <li class="mb-4">
+                                  <span class="text-gray-900">Project II, <em>Morse Theory on Complex Grassmannian</em></span><br>
+                                  <p class="text-base pl-4 text-gray-600">Complex Grassmannian $G_k(\mathbb{C}^n)$ consists of all $k$ dimensional complex subspace in $\mathbb{C}^n$. It is a smooth (complex) manifold of real dimension $2k(n-k)$. Using Morse theory, we studied the cell structure of complex Grassmannian by constructing an explicit Morse function on it.</p>
+                                </li>              
+                                
+                                <li class="mb-4">
+                                  <span class="text-gray-900">Project III, <em>Cell Structure of Real and Complex Grassmannian</em></span><br>
+                                  <p class="text-base pl-4 text-gray-600">Here, we again studied the cell structure of complex Grassmannian topologically i.e., without using any smooth structure of complex grassmannian. This process is equally applicable for real Grassmannian too. Finally, we compare this cell structure of complex Grassmannian with that of obtained using Morse theory in project II.</p>
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900">Project IV, <em>Cohomology Ring of Complex Grassmannian and Young Tableau</em></span><br>
+                                  <p class="text-base pl-4 text-gray-600">Using the CW-structure of the complex Grassmannian, we first compute the cellular homology of it and then cohomology by Poincaré duality. Finally, compute the cohomology ring structute of it using Young Tableau.</p>
+                                </li>
+                              </ol>
+                              <p class="text-base pl-4 text-gray-600">The combined project report can be found <a href="https://drive.google.com/file/d/1S0rWQMaRx_4zUwFppgOH9K0vrMzlWb78/view?usp=drive_link" style="color:rgb(29, 29, 165);" target="_blank">here.</a></p>
+                            </div> 
+                          </div>
+                        </div>
+                      </li>
+                    
+                      <li class="text-lg">
+                        <div class="media mt-2">
+                          <div class="media-body">
+                            <h5 class="mt-0">Semester project in PDE and Distribution Theory</h5>
+                            <p class="text-base pl-4 text-grey-700">The two Trace Theorems in Sobolev spaces were studied. Detailed report can be found in the following <a href="https://drive.google.com/file/d/1uK5fRjfw1OdKbnJztrVEcZ_SUnEa0A_a/view?usp=sharing" style="color:rgb(29, 29, 165);" target="_blank">link</a>.</p>
+                          </div>
+                        </div>
+                      </li>
+                    
+                      <li class="text-lg">
+                        <div class="media mt-2">
+                          <div class="media-body">
+                            <h5 class="mt-0">Semester Project in Riemannian Geometry</h5>
+                            <p class="text-base pl-4 text-grey-700"> Studied the proof of the theorem that any closed oriented surface of genus $g\geq 2$ admits metrics of constant negative curvature. Detailed can be found in the report with following <a href="https://drive.google.com/file/d/1NgePhVHH0Yp1VYbKeI7sCGDrdiiiVIFn/view?usp=sharing" style="color:rgb(29, 29, 165);" target="_blank">link</a>.</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ol>    
+                  </div>
+
+                  <div class="tab-pane overflow-auto" id="reading_semi" role="tabpanel" aria-labelledby="reading_semi-tab">  
+                    <p><i></i></p>
+                    <ol class="pl-8 list-disc text-base">  
+                      <li class="mb-4">
+                        <span class="text-gray-900">Group (co)homology, Spectra, and THH, <small>Spring 2025</small>, with topology & geometry group IISER Kolkata</span><br> 
+                        <p class="text-sm pl-4 text-gray-600">In preparation</p>
+                        <!-- <p class="text-sm pl-4 text-gray-600">Starting with basic Morse theory, we studied Morse homology and its applications. Notes can be found in the following <a href="https://drive.google.com/file/d/1SNC1RtvZkc6z5It7BvuJqLz3rU43Nt1G/view?usp=sharing" style="color:rgb(29, 29, 165);" target="_blank">link</a>.</p>  -->
+                     </li>
+                      
+                      <li class="mb-4">
+                          <span class="text-gray-900">Morse Homology, <small>Autumn 2024</small>, with topology & geometry group IISER Kolkata</span><br>
+                          <p class="text-sm pl-4 text-gray-600">Starting with basic Morse theory, we studied Morse homology and its applications. Notes can be found in the following <a href="https://drive.google.com/file/d/1SNC1RtvZkc6z5It7BvuJqLz3rU43Nt1G/view?usp=sharing" style="color:rgb(29, 29, 165);" target="_blank">link</a>.</p> 
+                      </li>
+
+                      <li class="mb-4">
+                          <span class="text-gray-900">Model Category, <small>Autumn 2023</small>, with topology & geometry group IISER Kolkata</span><br>
+                          <p class="text-sm pl-4 text-gray-600">Starting with the basic category theory, we went to model category. Notes can be found in the following <a href="https://drive.google.com/file/d/11y4oB1HBtymVvSTkqlyXHDANVrjeTy8_/view?usp=sharing" style="color:rgb(29, 29, 165);" target="_blank">link</a>.</p> 
+                      </li>
+
+                      <li class="mb-4">
+                          <span class="text-gray-900">Hochschild Homology & Operads, <small>Spring 2023</small>, with topology & geometry group IISER Kolkata</span><br>
+                          <p class="text-sm pl-4 text-gray-600">It was a semester (Spring 2023) long reading seminar happened weekly and alternate between the two mentioned topics. On one side, we studied Hochschild (co)homology, their relation with (co)homology of loop space of a simply connected space, the celebrated HKR (Hochschild-Kostant-Rosenberg) Theorem and bit of cyclic homology. The main references were ``<a href="https://people.math.rochester.edu/faculty/doug/otherpapers/weibel-hom.pdf" target="_blank">Introduction to Homological Algebra</a>" by Charles Weibel, ``An Introduction to Hochschild Cohomology" by Sarah Witherspoon, ``<a href="https://www.math.univ-paris13.fr/~vallette/GdT/Cyclic%20Homology%20-%20Loday.pdf" target="_blank
+                            ">Cyclic Homology</a>" by Jean-Louis Loday. <br>
+                          On the other hand the basics of operads were studied and ended with the recognition principle.</p> 
+                      </li>
+                    </ol>    
+                  </div>
+                  
+                  
+
+                  <div class="tab-pane overflow-auto" id="talks" role="tabpanel" aria-labelledby="talks-tab">  
+                    <p><i></i></p>
+                    <ul class="pl-4">  
+                      <li class="text-lg">
+                        <div class="media mt-2">
+                          <div class="media-body">
+                            <h5 class="mt-0">Invited Talks</h5>
+                            <div class="list-group">
+                              <ol class="pl-8 list-disc text-base">
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><em>Associahedra and Its Combinatorial Isomorphism to Three Other Models,</em></span>, 
+                                  <a>Seminar "Knots and representation theory"</a>, 30th December, 2024 (Online)
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><em>Combinatorial Isomorphism Between Four Models of Associahedra</em></span>, 
+                                  <a href="https://math.jlu.edu.cn/info/1555/15924.htm" style="color:rgb(29, 29, 165);" target="_blank">Departmental Seminar</a>, School of Mathematics, Jilin University, China, 24th December, 2024
+                                </li>
+                                
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><em>Spheres Bundle Over Spheres: Topological and Geometric View</em></span>, 
+                                  <a href="https://math.jlu.edu.cn/info/1556/15910.htm" style="color:rgb(29, 29, 165);" target="_blank">International Conference on Differential Geometry and Topology</a>, Jilin University, China, December 12-15, 2024
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><em>On Generalized Brace Product</em></span>, 
+                                  <a href="https://qzc.tsinghua.edu.cn/en/info/1126/3707.htm" style="color:rgb(29, 29, 165);" target="_blank">Advances in Homotopy Theory VI</a>, CGTA & BIMSA (Online), 17th June, 2024
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><em>$H$-splitting in Loop Space Fibration</em></span>, 
+                                  <a href="https://www.tcgcrest.org/events/bengal-topology-circle-meeting-2023/" style="color:rgb(29, 29, 165);" target="_blank">Bengal Topology Circle Meeting 2023</a>, TCG-CREST, 20th January, 2023
+                                </li>
+                              </ol>
+                            </div> 
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="text-lg">
+                        <div class="media mt-2">
+                          <div class="media-body">
+                            <h5 class="mt-0">Contributed Talks</h5>
+                            <div class="list-group">
+                              <ol class="pl-8 list-disc text-base">
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><em>$H$-splitting in Loop Space Fibration</em></span>, 
+                                  <a href="https://sites.google.com/view/grootopology/previous-years/groot-2023?authuser=0" style="color:rgb(29, 29, 165);" target="_blank">GROOT Summer Seminar</a>, Online, 28th June, 2023
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><em>$H$-splitting in Loop Space Fibration and Brace Product</em></span>, 
+                                  <a href="https://www.niser.ac.in/events/iinmm2023/" style="color:rgb(29, 29, 165);" target="_blank">Inter IISER-NISER Mathematics Meet (IINMM) 2023</a>, NISER Bhubaneswar, 30th September, 2023
+                                </li>
+                              </ol>
+                            </div> 
+                          </div>
+                        </div>
+                      </li>
+                    </ul>    
+                  </div>
+                  
+                  
+                  <div class="tab-pane overflow-auto" id="posters" role="tabpanel" aria-labelledby="posters-tab">  
+                    <p><i></i></p>
+                    <ul class="pl-4 list-disc">  
+
+                      <li class="text-lg">
+                        <div class="media mt-2">
+                          <div class="media-body">
+                            <div class="list-group">
+                              <span class="text-gray-900"><em>Spaces of Planar Polygons and Morse Theory</em> (joint with Sourasish Karmakar)</span> 
+                              DMS Symposium 2025, IISER Kolkata, February, 2025 <em>(secured first place)</em>
+                            </div> 
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="text-lg">
+                        <div class="media mt-2">
+                          <div class="media-body">
+                            <div class="list-group">
+                              <span class="text-gray-900"><em>Hedra Zoo</em> (based on our <a href="https://arxiv.org/abs/2201.04847" target="_blank">arXiv</a> preprint)</span> 
+                              DMS Symposium 2022, IISER Kolkata, February, 2022
+                            </div> 
+                          </div>
+                        </div>
+                      </li>
+                    </ul>    
+                  </div>
+
+                  <div class="tab-pane overflow-auto" id="conf_work" role="tabpanel" aria-labelledby="conf_work-tab">  
+                    <p><i></i></p>
+                    <ul class="pl-4">  
+                      <li class="text-lg">
+                        <div class="media mt-2">
+                          <div class="media-body">
+                            <div class="list-group">
+                              <ul class="pl-8 list-disc text-base">
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><a href="https://www.atmschools.org/school/2025/NCMW/tgc" style="color:rgb(29, 29, 165);" target="_blank">Topics in Geometric Combinatorics</a>, <small>June 30 - July 5, 2025</small> (upcoming), Chennai Mathematical Institute, Siruseri </span>
+                                </li>
+                                
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><a href="https://math.jlu.edu.cn/info/1556/15910.htm" style="color:rgb(29, 29, 165);" target="_blank">International Conference on Differential Geometry and Topology</a>, <small>December 12 - 15, 2024</small>, Jilin University, China, <em>Invited speaker</em></span>
+                                </li>
+                                
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><a href="https://www.atmschools.org/school/2024/NCMW/ot" style="color:rgb(29, 29, 165);" target="_blank">Operads in Topology</a>, <small>November 29 - December 4, 2024</small>, IIT Bombay, <em>Tutor</em> </span>
+                                </li>
+                                
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><a href="https://www.uni-muenster.de/MathematicsMuenster/events/2024/YTM.shtml" style="color:rgb(29, 29, 165);" target="_blank">Young Topologists Meeting 2024</a>, <small>August 05 - 09, 2024</small>, Universit&auml;t M&uuml;nster, Germany</span>
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><a href="https://math.iiserkol.ac.in/attachments/general/poster-btc-2024.pdf" style="color:rgb(29, 29, 165);" target="_blank">Bengal Topology Circle Meeting 2024</a>, <small>January 12, 2024</small>, IISER Kolkata</span>
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><a href="https://www.atmschools.org/school/2023/AIS/hh" style="color:rgb(29, 29, 165);" target="_blank">Hochschild Homology</a>, <small>December 04 - 16, 2023</small>, IISER Kolkata, <em>Tutor</em> </span>
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><a href="http://www.crm.sns.it/event/523/" style="color:rgb(29, 29, 165);" target="_blank">Combinatorial Algebraic Topology, and Applications</a>, <small>November 27 - 28, 2023</small>, Centro di Ricerca Matematica Ennio De Giorgi, Italy</span>
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><a href="https://www.icts.res.in/program/dta2023" style="color:rgb(29, 29, 165);" target="_blank">Dualities in Topology and Algebra</a>, <small>May 15 - 26, 2023</small>, ICTS Bengaluru </span>
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><a href="https://www.ramanujanmathsociety.org/rms_conferences.html" style="color:rgb(29, 29, 165);" target="_blank">37th Annual Conference of Ramanujan Mathematical Society</a>, <small>December 06 - 08, 2022</small>, SSN College of Engineering, Kalavakkam, Tamil Nadu</span>
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><a href="https://www.atmschools.org/school/2022/AFS-II/afs-ii-kolkata" style="color:rgb(29, 29, 165);" target="_blank">AFS-II</a>, <small>June 20 - July 16, 2022</small>, IISER Kolkata, <em>Tutor</em> </span>
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><a href="https://www.atmschools.org/school/2022/IST/ti" style="color:rgb(29, 29, 165);" target="_blank">IST (Transformations & Isometries)</a>, <small>June 06 - 18, 2022</small>, IISER Kolkata, <em>Tutor</em></span>
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><a href="https://www.atmschools.org/school/2022/ncmw/it" style="color:rgb(29, 29, 165);" target="_blank">Intersection Theory</a>, <small>May 02 - 14, 2022</small>, IIT Bombay </span>
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900"><a href="https://sites.google.com/view/igci2021/workshops" style="color:rgb(29, 29, 165);" target="_blank">Introductory workshop on GeoGebra (Bengali)</a>, <small>March 02 - 06, 2021</small>, Online, Coordinator and Resource person</span>
+                                </li>
+
+                              </ul>
+                            </div> 
+                          </div>
+                        </div>
+                      </li>
+                    </ul>    
+                  </div>
+                  
+                  <div class="tab-pane overflow-auto" id="misc" role="tabpanel" aria-labelledby="misc">  
+                    <p><i></i></p>
+                    <ul class="pl-4">  
+                      <li class="text-lg">
+                        <div class="media mt-2">
+                          <div class="media-body">
+                            <h5 class="mt-0">Computer Skills</h5>
+                            <div class="list-group">
+                              <ol class="pl-8 list-disc text-base">
+                                <li class="mb-4">
+                                  <span class="text-gray-900">Fluent in LATEX, Inkscape, and Geogebra software</span>
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900">Have working knowledge of HTML and C/python-programming</span>
+                                </li>
+                              </ol>
+                            </div> 
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="text-lg">
+                        <div class="media mt-2">
+                          <div class="media-body">
+                            <h5 class="mt-0">Sports</h5>
+                            <div class="list-group">
+                              <ol class="pl-8 list-disc text-base">
+                                <li class="mb-4">
+                                  <span class="text-gray-900">Love to play Cricket (batting all-rounder)</span>
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900">Intermediate player in Lawn Tennis, Table Tennis, and Volleyball</span>
+                                </li>
+
+                                <li class="mb-4">
+                                  <span class="text-gray-900">Selected to participate twice in Inter IISER NISER Sports Meet (IISM) 2019 and 2022 as a middle-distance runner (800 and 1600 meters), and Discuss thrower representing IISER Kolkata</span>
+                                </li>
+                              </ol>
+                            </div> 
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="text-lg">
+                        <div class="media mt-2">
+                          <div class="media-body">
+                            <h5 class="mt-0">Cultural</h5>
+                            <div class="list-group">
+                              <ol class="pl-8 list-disc text-base">
+                                <li class="mb-4">
+                                  <span class="text-gray-900">Listen to all kinds (languages) of music a lot, play Guitar and Flute in leisure</span>
+                                </li>
+                              </ol>
+                            </div> 
+                          </div>
+                        </div>
+                      </li>
+                    </ul>    
+                  </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        
+        
+        <!--JS FUNCTION FOR RECENT WORK SECTION -->
+        <script>
+            $('#test-list a').on('click', function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+            })
+        </script> 
+        
+        <!-- OPTIONAL TOAST JS FUNCTION-->
+        <script>
+            $(document).ready(function() {
+                $(".toast").toast("show");
+            });
+        </script>
+        
+        
+        <script>
+        $('body').scrollspy({ target: '#list-example' })
+        </script>
+        
+        <script>
+        $('.collapse').collapse()
+        </script>
+        
+        <script>
+        $('.show').show()
+        </script>
+      
+
+      <span style="color: Black;"> 
+        <i> &nbsp;&nbsp; </i>
+      </span>
+    </p>
+      </div>
+      </div> 
+      <script>
+         $(function () {
+           $('[data-toggle="popover"]').popover()
+         })
+      </script>
+
+
+      <!-- Nice Footer from Sachchidanand -->
+
+    <div class="container my-5">
+
+      <footer style="background-color: #e3eff083;">
+      <div class="container p-2">
+        <div class="row">
+          <div class="col-lg-3 pl-2">
+            <p class="text-sm text-gray-700 sm:ml-4">Last updated: <span id="updated"></span>
+          </div>
+
+          <div class="col-lg-6">
+            <p class="text-center">
+              <span class="text-gray-500 text-sm ml-4">No of visitors: </span>
+              <img class="w-5 inline" src="https://counter.digits.net/?counter={508862f1-84cc-3974-c948-a90f31dc67a7}&template=simple&background=bg-gray-200&foreground=text-gray-600"
+                 alt="Hit Counter by Digits" border="0"> 
+              <span class="text-gray-500 text-sm ml-2">Counter provided by <a href="https://www.digits.net/" class="text-gray-600 hover:text-gray-500" target="_blank">Digits.Net</a></span>
+            </p>
+          </div>
+          
+          <div class="col-lg-3">
+            <div class="d-flex flex-row-reverse sm:ml-auto mt-1 justify-center sm:justify-start">
+              <a class="ml-3 text-gray-500 hover:text-red-400 mr-3" href="https://www.linkedin.com/in/sandip-samanta-869a39238/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+              </a>
+
+              <a class="ml-3 text-gray-500 hover:text-blue-500" href="https://twitter.com/SandipS67699459" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+              </a>
+
+              <a class="ml-3 text-gray-500 hover:text-green-500" href="https://www.researchgate.net/profile/Sandip-Samanta-6" target="_blank">
+               <i class="ai ai-researchgate ai-lg"></i>
+              </a>
+
+              <a class="ml-3 text-gray-500 hover:text-blue-500" href="https://www.facebook.com/sandip.samanta.31337/" target="_blank">
+               <i class="fa-brands fa-facebook-f"></i>
+              </a>
+
+              <a class="text-gray-500 hover:text-red-600" href="https://www.youtube.com/channel/UC1OKJaiauyyPBL-bgUB-8iA" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="background-color: rgba(194, 191, 211, 0.2);">
+        <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-gray-400 sm:py-2">© 2022 - Theme Built using Jekyll, See it on
+                <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton" class="text-gray-600 hover:text-gray-500" target="_blank" >GitHub</a>
+             </p>
+      </div>
+    </footer>
+    
+  </div>
+    
+      <script>
+         function myFunction() {
+           var x = document.lastModified;
+           document.getElementById("updated").innerHTML = new Date(document.lastModified).toISOString().substr(0, 10);
+           }
+         
+           myFunction()
+      </script>
+   </body>
+</html>
+
